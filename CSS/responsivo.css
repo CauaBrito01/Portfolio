@@ -170,6 +170,11 @@
 }
 
 @media (max-width:425px){
+    .meuAvatar{
+        width: 200px;
+        height: 200px;
+    }
+
     header{
         width: 320px;
         width: 100%;
@@ -181,17 +186,22 @@
     }
 
     .home_main h1{
-        font-size: xx-small;
+        font-size: 6px;
         margin-bottom: 0.5rem;
     }
     .home_main h2{
-        font-size: xx-small;
+        font-size: 6px;
     }
-
+    .home_sobre_mim h1{
+        font-size: x-small;
+    }
     .home_sobre_mim p{
-        font-size: 1vh;
+        font-size: 4px;
     }  
 
+    .titulo_projects{
+        font-size: x-small;
+    }
     .minhasReferencias figure img {
         width: 200px;
         height: 200px;
