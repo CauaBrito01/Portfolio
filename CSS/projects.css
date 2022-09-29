@@ -1,0 +1,163 @@
+.projects{
+    display: block;
+}
+
+.titulo_projects{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    color: #141c3a;
+    font-weight: 800;
+    font-family: "eurostile", sans-serif;
+    text-shadow: 1px 1px 20px #000000;
+
+}
+
+
+
+.projects_cards{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows:45% 45% ;
+    height: auto;
+    grid-gap: 2rem;
+    justify-content: center;
+    height: 560px;
+    
+}
+
+.calculadora{
+    background-image: url(../Imagens/Calculadora.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+
+.mesa_de_som{
+    background-image: url(../Imagens/Mesa\ de\ Som.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.site_responsivo_mobile{
+    background-image: url(../Imagens/Celular.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.cursos_alurinha{
+    background-image: url(../Imagens/Icone\ Alura.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start:1;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.site_jogos{
+    background-image: url(../Imagens/controle\ video\ game.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.site_receitas{
+    background-image: url(../Imagens/receitas2.jfif);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start:2;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.social_fut{
+    background-image: url(../Imagens/Social\ Fut.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.batalha_naval{
+    background-image: url(../Imagens/Batlha\ naval.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start:2;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.links_projetos{
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding-top: 0.3rem;
+}
+
+.icons-cards{
+    margin-left: 1rem;
+}
+
+.icons-cards img{
+    margin-top: 12rem;
+    margin-left: 0.5px;
+    width: 30px;
+    height: 30px;
+}
+
+.projects a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+
+}
+.projects a:after{
+    content: "";
+    position: absolute;
+    background-color: #e0d9e7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.projects a:hover:after{
+    width: 98%;
+}

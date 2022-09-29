@@ -1,0 +1,52 @@
+footer{
+    margin-bottom: 1rem;
+}
+
+.titulo_footer{
+    display: flex;
+    justify-content: center;
+}
+
+.texto_footer{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.imagem_logo_footer{
+    height: 50px;
+    width: 50px;
+}
+
+.containerFooter{
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    color: #a0a0a0;
+
+}
+footer a:after{
+    content: "";
+    position: absolute;
+    background-color: #e0d9e7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+footer a:hover:after{
+    width: 100%;
+}

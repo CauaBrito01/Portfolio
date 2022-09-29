@@ -1,0 +1,39 @@
+.tituloContact{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    color: #141c3a;
+    font-weight: 800;
+    font-family: "eurostile", sans-serif;
+    text-shadow: 1px 1px 20px #000000;
+
+}
+
+.foto-minha{
+    display: flex;
+    justify-content: center;
+}
+
+.minhasReferencias img {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.minhasReferencias figure img {
+    border-radius: 80%;
+    box-shadow: 1px 1px 20px #000000 ;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links a img{
+    width: 50px; 
+    height: 50px;
+    padding-bottom: 2rem;
+}
+
+

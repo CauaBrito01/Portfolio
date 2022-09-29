@@ -1,0 +1,6 @@
+colocar animação nelas para se destacarem
+-----------------------
+colocar hover nas imagens dos meu projetos
+para aparecer o texto dentro
+------------------------
+encaixar um carrosel em algum lugar
