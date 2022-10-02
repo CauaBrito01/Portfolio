@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="shortcut icon" href="Imagens-de-login/bola.png   " type="image/x-icon">
+
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="animation">
+            <h1>Faça ja seu login, e inicie sua jornada em nosso site:</h1>
+            <img src="../Login-novo/Imagens-de-login/animação.gif">
+
+        </div>
+        <div id="bloco-de-login">
+            <div id="imagem-do-topo"><img  class="logotipo" src="../TelaCadastro/imagens cadastro/Group 3.png" alt="Logo social fut"></div>
+            <div id="e-mail">
+                <input id="e-maili" type="email" placeholder=" Insira seu e-mail:" >
+                         
+            </div>
+            <div id="senha" name="input_nome">
+                <input id="senhai" type="password" placeholder=" Insira sua senha:" name="usuario_nome1">
+                <label id="senhaii" for="senhai"></label>
+            </div>
+            <div id="botoes">
+                <div><button onclick="logUserIn()" id="botão-entrar" id="entrar"><a>Entrar</a></button></div>
+                <div ><button id="botão-registrar" onclick="cadastrar()"><a>Registrar Conta</a></button>
+            </div>
+    </div>
+        <script>
+           var usuarios = carregarUsuarios();
+
+           function logUserIn() {
+
+            var user = document.getElementById("e-maili").value;
+
+            var password = document.getElementById("senhai").value;
+
+            console.log(user + " " + password)
+
+            for (let i = 0; i < usuarios.length; i++) {
+                if(usuarios[i].username == user ) {
+                    if(usuarios[i].password == password) {
+                        window.alert("login efetuado com sucesso")
+
+                        document.location = "../Informaçoes Adicionais/index.html"
+
+                        return
+                    }
+                    else {
+                        window.alert("senha incorreta")
+
+                        return
+                    }
+                }
+            }
+            alert("usuario não encontrado")
+           }
+
+           function carregarUsuarios() {
+               return JSON.parse(localStorage.getItem("usuarios"));
+           }
+               
+           function cadastrar() {
+               document.location = "../TelaCadastro/cadastro.html"
+           }
+        </script>
+</body>
+</html>

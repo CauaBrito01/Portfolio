@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SocialFut</title>
+    <link rel="stylesheet" href="login_responsivo.css">
+    <link rel="shortcut icon" href="../Login-novo/Imagens-de-login/bola.png" type="image/x-icon">
+</head>
+<body>
+    <header><h1>Faça ja seu login, e inicie sua jornada em nosso site:</h1></header>
+    <div class="container">
+        <div class="imagem"><img src="../Login-novo/Imagens-de-login/animação.gif"></div>
+        <div class="bloco_login">
+            <div class="logotipo"><img src="../TelaCadastro/imagens cadastro/Group 3.png"></div>
+            <div class="input_email">
+                <input id="e-maili" type="email" placeholder=" Insira seu e-mail:" >
+                <label id="email" for="e-maili"></label>     
+            </div>
+            <div class="input_senha">
+                <input id="senhai" type="password" placeholder=" Insira sua senha:" name="usuario_nome1">
+                <label id="senhaii" for="senhai"></label>
+            </div>
+            <div id="botoes">
+                <div><button onclick="logUserIn()" id="botão-entrar" id="entrar"><a>Entrar</a></button></div>
+                <div ><button id="botão-registrar" onclick="cadastrar()"><a>Registrar Conta</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+      <script>
+           var usuarios = carregarUsuarios();
+
+           function logUserIn() {
+
+            var user = document.getElementById("e-maili").value;
+
+            var password = document.getElementById("senhai").value;
+
+            if(user == ""){
+                window.alert('o campo do email não pode ficar em branco')
+                
+            }else {        
+            for (let i = 0; i < usuarios.length; i++) {
+                if(usuarios[i].username == user ) {
+                    if(usuarios[i].password == password) {
+                        window.alert("login efetuado com sucesso")
+
+                        document.location = "../Informaçoes Adicionais/index.html"
+
+                        return
+                    }
+                    else {
+                        window.alert("senha incorreta")
+
+                        return
+                    }
+                }
+            }
+            alert("usuario não encontrado")
+           }}  
+
+           function carregarUsuarios() {
+               return JSON.parse(localStorage.getItem("usuarios"));
+           }
+               
+           function cadastrar() {
+               document.location = "../TelaCadastro/cadastro.html"
+           }
+        </script>

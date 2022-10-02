@@ -1,0 +1,142 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:fantasy;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100vh;
+    background-color: #2F3136;
+    
+}
+
+header {
+    background-color:#202225;
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    box-shadow:0px 5px 20px #202225;
+}
+
+.menu {
+    display:flex;
+    list-style:none;
+    align-items: center;
+}
+
+.menu li a {
+    color: gray;
+    display:block;
+    text-decoration: none ;
+    margin-left:20px;
+}
+.menu li a:hover {
+    padding: 5px;
+    background-color:white;
+    cursor: pointer;
+    color:blue;
+    font-weight:lighter;
+}
+.head_img img {
+    display:flex;
+    flex-direction: column;
+    height:40px;
+}
+
+.meio {
+    height:100vh;
+}   
+.meio_container {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.meio_esquerdo {
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#40444B;
+    border-radius:10px;
+    height:65vh;
+    width:100vh;
+    min-width:20vh;
+    margin-top:3%;
+    margin-right:2%;
+    margin-left:2%;
+}
+
+.container_imagem {
+    margin-top:10%;
+    height:70%;
+    width:30vh;
+    margin-right:2%;
+    margin-left:2%;
+}
+.container_imagem img {
+    flex-grow:1;
+    height:95%;
+}
+.container_input {
+    margin-top:9%;
+    height:70%;
+    width:60vh;
+    margin-right:2%;
+    margin-left:2%;
+}
+.botoes {
+    margin-top:5%;
+    width:100%;
+    height:100%;
+}
+.botoes select {
+    box-shadow: 2px 2px 0px gray;
+    border:2px solid gray;
+}
+.primeira_info {
+    margin-left:5%;
+    width:90%;
+}
+.segunda_info {
+    margin-top:3%;
+    margin-left:5%;
+    width:90%;
+}
+.terceira_info {
+    margin-top:3%;
+    margin-left:5%;
+    width:90%;
+}
+.quarta_info {
+    margin-top:3%;
+    margin-left:5%;
+    width:90%;
+}
+.confirmar {
+    margin-top:30%;
+    margin-left:5%;
+    width:90%;
+}
+
+.meio_direito{
+    max-height:60vh;
+    min-height:0vh;
+    width:70vh;
+    margin-top:4%;
+    margin-right:8%;
+}
+.campinho {
+    max-height:100%;
+    min-height:0%;
+    width:500px;
+    margin-bottom:5px;
+}
+footer {
+    margin-top:10%;
+    background-color:#202225;
+    height:10vh;
+    width:100%;
+    font-size: large;
+}

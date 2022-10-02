@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informaçoes adicionais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../Informaçoes Adicionais/imagens informaços adicionai/bola.png" type="image/x-icon">
+</head>
+<body>
+    <div ><img id="imagem-topo" src="../Informaçoes Adicionais/imagens informaços adicionai/Group 3.png" alt="Logo-Social-fut"></div>
+    <div id="caixa">
+        <div><h2 id="titulo">Informaçoes adicionais</h2></div>
+        <div><input id="apelido" type="text" placeholder="Qual seu nome ou apelido?"></div> 
+        <div><input id="idade" type="number" placeholder="Qual sua idade? "></div>
+        <div><select id="posição" name="Posição">
+            <Option>Selecione sua posição favorita</Option>
+            <option value="">ATA</option>
+            <option value="">SA</option>
+            <option value="">PD</option>
+            <option value="">PE</option>
+            <option value="">MEI</option>
+            <option value="">MD</option>
+            <option value="">ME</option>
+            <option value="">VOL</option>
+            <option value="">ZAG</option>
+            <option value="">LE</option>
+            <option value="">LD</option>
+            <option value="">ZAG</option>
+            <option value="">GOL</option>
+        </select>
+    </div>
+        <div><select id="posição" name="Segunda-Posição" id="Segunda-Posição">
+            <Option>Qual sua segunda posição favorita?</Option>
+            <option value="">ATA</option>
+            <option value="">SA</option>
+            <option value="">PD</option>
+            <option value="">PE</option>
+            <option value="">MEI</option>
+            <option value="">MD</option>
+            <option value="">ME</option>
+            <option value="">VOL</option>
+            <option value="">ZAG</option>
+            <option value="">LE</option>
+            <option value="">LD</option>
+            <option value="">ZAG</option>
+            <option value="">GOL</option>
+        </select>
+    </div>
+        <div><input id="time" type="text" placeholder="Qual seu time favorito?"></div>
+        <div><input id="cidade" type="text" placeholder="Cidade"></div>
+        <div><input id="endereço" type="text" placeholder="Endereço"></div>
+        <div><button class="botao" onclick="ir_feed()" ><a>Entrar</a></button></div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    function ir_feed() {
+        
+        var  apelido = document.getElementById("apelido").value;
+       
+        var  idade  = document.getElementById("idade").value; 
+    
+        var  time    = document.getElementById("time").value; 
+        
+        var  cidade   = document.getElementById("cidade").value; 
+       
+        var  endereço   = document.getElementById("endereço").value; 
+        
+
+        if(apelido == "" || idade == "" ||  time == "" || cidade == "" || endereço == "") {
+            console.log('chego aqui tbm')
+            window.alert('um ou mais campos estão vazios')
+        } else {
+        document.location = '../Feed/feed.html'
+        }
+    }
+
+
+
+
+</script>

@@ -1,0 +1,7 @@
+-1 login/regitro funcional
+-2 ad vai pro criar campo
+-3 criar campo vai pro feed
+-4 guardar informaçoes adicionai no perfil
+-5 informaçõe add vai pro perfil
+-6 lobby funcional
+(quando der dechar tudo responsivo)

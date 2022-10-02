@@ -26,13 +26,25 @@
     
 }
 
-.calculadora{
-    background-image: url(../Imagens/Calculadora.jpg);
+.batalha_naval{
+    background-image: url(../Imagens/horario\ de\ agora.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-column-start: 1;
+    grid-column-start: 2;
     grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
+.calculadora{
+    background-image: url(../Imagens/validar\ sexo\ e\ idade.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-column-end: 3;
     grid-row-start:1;
     grid-row-end:2;
     border-radius: 40px;
@@ -44,27 +56,15 @@
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:1;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start:2;
     grid-row-end:2;
     border-radius: 40px;
 }
 
 .site_responsivo_mobile{
     background-image: url(../Imagens/Celular.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start:1;
-    grid-row-end:2;
-    border-radius: 40px;
-}
-
-.cursos_alurinha{
-    background-image: url(../Imagens/Icone\ Alura.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,8 +75,20 @@
     border-radius: 40px;
 }
 
+.cursos_alurinha{
+    background-image: url(../Imagens/Analisar\ numeros.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end:2;
+    border-radius: 40px;
+}
+
 .site_jogos{
-    background-image: url(../Imagens/controle\ video\ game.jpg);
+    background-image: url(../Imagens/contador.webp);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,19 +100,7 @@
 }
 
 .site_receitas{
-    background-image: url(../Imagens/receitas2.jfif);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:2;
-    grid-row-end:2;
-    border-radius: 40px;
-}
-
-.social_fut{
-    background-image: url(../Imagens/Social\ Fut.png);
+    background-image: url(../Imagens/tabuada.jpg);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,17 +111,19 @@
     border-radius: 40px;
 }
 
-.batalha_naval{
-    background-image: url(../Imagens/Batlha\ naval.jpg);
+.social_fut{
+    background-image: url(../Imagens/Social\ Fut.png);
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    grid-column-start: 4;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start:2;
     grid-row-end:2;
     border-radius: 40px;
 }
+
+
 
 .links_projetos{
     display: flex;
