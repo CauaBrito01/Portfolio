@@ -66,35 +66,60 @@
     .icons-cards{
         display: none;
     }
-    .projects_cards{
-        display: grid;
-        grid-template-columns: 40% 40%;
-        grid-template-rows: 20% 20% 20% 20% ;
-        height: auto;
-        grid-gap: 1rem;
-        justify-content: center;
-        height: 800px;
-        
-    }
-
-    .site_responsivo_mobile{
-        background-image: url(../Imagens/Celular.jpg);
-        background-position:center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start:3;
-        grid-row-end:4;
-        border-radius: 40px;
-    }
     .cursos_alurinha{
         background-image: url(../Imagens/Icone\ Alura.jpg);
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:1;
+        grid-row-end:2;
+        border-radius: 40px;
+    }
+    .batalha_naval{
+        background-image: url(../Imagens/Batlha\ naval.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
         grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-end: 2;
+        grid-row-start:1;
+        grid-row-end:2;
+        border-radius: 40px;
+    }
+
+    .calculadora{
+        background-image: url(../Imagens/validar\ sexo\ e\ idade.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start:2;
+        grid-row-end:3;
+        border-radius: 40px;
+    }
+    
+    .site_responsivo_mobile{
+        background-image: url(../Imagens/Celular.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start:2;
+        grid-row-end:3;
+        border-radius: 40px;
+    }
+
+    .site_jogos{
+        background-image: url(../Imagens/contador.webp);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column-start: 1;
+        grid-column-end: 2;
         grid-row-start:3;
         grid-row-end:4;
         border-radius: 40px;
@@ -105,23 +130,48 @@
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start:3;
+        grid-row-end:4;
+        border-radius: 40px;
+    }
+
+    .site_receitas{
+        background-image: url(../Imagens/Celular.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start:4;
-        grid-row-end:5;
+        grid-row-end:4;
         border-radius: 40px;
     }
-    .batalha_naval{
-        background-image: url(../Imagens/Batlha\ naval.jpg);
+
+    .mesa_de_som{
+        background-image: url(../Imagens/Mesa\ de\ Som.png);
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
         grid-column-start: 2;
-        grid-column-end: 3;
+        grid-column-end: 2;
         grid-row-start:4;
-        grid-row-end:5;
+        grid-row-end:4;
         border-radius: 40px;
     }
+
+    .projects_cards{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 20% 20% 20% 20% ;
+        height: auto;
+        grid-gap: 1rem;
+        justify-content: center;
+        height: 800px;
+        
+    }
+    
     header{
         width: 500px;
         width: 100%;
@@ -210,5 +260,53 @@
     footer{
         width: 320px;
         width: 100%;
+    }
+    .links a img{
+        width: 30px; 
+        height: 30px;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width:297px){
+    .icons{
+        display: flex;
+    }
+    .icons img{
+      animation: load 1.5s infinite;
+    }
+    
+    .icons img:nth-child(2) {
+    animation-delay: .1s;
+    }
+    
+    .icons img:nth-child(3) {
+    animation-delay: .2s;
+    }
+    
+    .icons img:nth-child(4) {
+    animation-delay: .3s;
+    }
+    
+    @keyframes load {
+    0% {
+        height: 10px;
+    }
+    50% {
+        height: 30px;
+    }
+    100% {
+        height: 10px;
+    }
+    }
+    .nav_menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .imagem_logo_nav{
+        width: 20px;
+        height: 20px;
     }
 }
